@@ -33,11 +33,9 @@ const zip = (src, dest, callback) => {
   // Call the callback with an error object when something went wrong and return.
   archive.on('warning', (err) => {
     callback(err);
-    return;
   });
   archive.on('error', (err) => {
     callback(err);
-    return;
   });
 
   // Pipe the archive data to the output stream
@@ -74,13 +72,11 @@ const unzip = (src, dest, callback) => {
   // Error handler
   extract.on('error', (err) => {
     callback(err);
-    return;
   });
 
   // Success handler
   extract.on('close', () => {
     callback(null);
-    return;
   });
 };
 
