@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/ChibiFR/ziptool#readme",
   "engines": {
-    "node": "^4.0.0"
+    "node": ">=4"
   },
   "dependencies": {
     "archiver": "^2.0.3"
