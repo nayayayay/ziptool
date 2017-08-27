@@ -1,0 +1,38 @@
+{
+  "name": "ziptool",
+  "version": "1.0.0",
+  "description": "A simple tool to zip and unzip from the command line or from your code.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node src/index.js"
+  },
+  "bin": {
+    "ziptool": "./bin/ziptool.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChibiFR/ziptool.git"
+  },
+  "keywords": [
+    "zip",
+    "unzip",
+    "archive"
+  ],
+  "author": "Chibi <23081995b@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChibiFR/ziptool/issues"
+  },
+  "homepage": "https://github.com/ChibiFR/ziptool#readme",
+  "engines": {
+    "node": "^4.0.0"
+  },
+  "dependencies": {
+    "archiver": "^2.0.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  }
+}
