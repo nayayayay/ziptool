@@ -29,7 +29,8 @@
     "node": ">=4"
   },
   "dependencies": {
-    "archiver": "^2.0.3"
+    "archiver": "^2.0.3",
+    "unzip": "^0.1.11"
   },
   "devDependencies": {
     "chai": "^4.1.1",
