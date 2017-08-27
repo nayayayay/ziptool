@@ -4,8 +4,9 @@ const rimraf = require('rimraf');
 const { zip, unzip } = require('../src/index.js');
 
 describe('ziptool', () => {
-  // Create tmp dir and files
+  // Clean and create tmp dir and files
   before(() => {
+    rimraf.sync('tmp');
     fs.mkdirSync('tmp');
     fs.writeFileSync('tmp/foo.txt', 'foo');
     fs.writeFileSync('tmp/bar.txt', 'bar');
