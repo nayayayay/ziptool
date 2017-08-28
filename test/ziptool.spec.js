@@ -18,7 +18,7 @@ describe('ziptool', () => {
   });
 
   describe('#zip()', () => {
-    it('should zip a file', () => {
+    it('should zip a file', (done) => {
       zip('tmp/foo.txt', 'tmp/foo.zip', (err) => {
         expect(err).to.be.null;
         expect(fs.existsSync('tmp/foo.zip')).to.be.true;
@@ -26,7 +26,7 @@ describe('ziptool', () => {
       });
     });
 
-    it('should zip multiple files', () => {
+    it('should zip multiple files', (done) => {
       zip(['tmp/foo.txt', 'tmp/bar.txt'], 'tmp/foobar.zip', (err) => {
         expect(err).to.be.null;
         expect(fs.existsSync('tmp/foobar.zip')).to.be.true;
@@ -36,7 +36,7 @@ describe('ziptool', () => {
   });
 
   describe('#unzip()', () => {
-    it('should create a directory and exctract the zip in there', () => {
+    it('should create a directory and exctract the zip in there', (done) => {
       unzip('tmp/foobar.zip', 'tmp/foobar', (err) => {
         expect(err).to.be.null;
         expect(fs.existsSync('tmp/foobar/foo.txt')).to.be.true;
