@@ -1,6 +1,6 @@
 {
   "name": "ziptool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple tool to zip and unzip from the command line or from your code.",
   "main": "src/index.js",
   "types": "typings/index.d.ts",

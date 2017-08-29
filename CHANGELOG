@@ -1,0 +1,6 @@
+v1.0.1:
+  * Added support for typescript with a types declaration file (typings/index.d.ts)
+    bundled with the library.
+
+v1.0.0: 
+  * Initial version
