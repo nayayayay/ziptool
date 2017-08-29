@@ -26,7 +26,7 @@ const zip = (src, dest, callback) => {
   });
 
   // Call the callback function with null as parameter.
-  output.on('end', () => {
+  output.on('close', () => {
     callback(null);
   });
 
