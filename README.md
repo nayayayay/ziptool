@@ -48,7 +48,7 @@ or **locally** into your npm project: `npm install ziptool --save`
     ```
     You can also require only the functions you need:
     ```javascript
-    const {zip} = require('zip');
+    const {zip} = require('ziptool');
     ```
 
 
