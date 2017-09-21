@@ -5,4 +5,10 @@ declare module 'ziptool' {
 
   export function zip(src: string|string, dest: string, callback: ziptoolCallback): void;
   export function unzip(src: string, dest: string, callback: ziptoolCallback): void;
+
+  export default {
+    VERSION,
+    zip,
+    unzip
+  };
 }
