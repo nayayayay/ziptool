@@ -1,3 +1,7 @@
+v1.0.2:
+  * Added default export bundling VERSION, zip and unzip to typescript declarations.
+  * Fixed typo in README.md
+
 v1.0.1:
   * Added support for typescript with a types declaration file (typings/index.d.ts)
     bundled with the library.
